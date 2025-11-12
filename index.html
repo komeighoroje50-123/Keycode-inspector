@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Key Inspector</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Inspector</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ PropellerAds Verification Meta Tag -->
+  <meta name="propeller" content="xxxxxxxxxxxxxxxx">
 </head>
 <body>
 
-<div class="card">
-  <h1>Key Inspector</h1>
-  <p>Type in the box below. Works with soft keyboards and physical keyboards.</p>
+  <div class="card">
+    <h1>Key Inspector</h1>
+    <p>Type in the box below. Works with soft keyboards and physical keyboards.</p>
 
-  <input type="text" id="typingInput" placeholder="Type here..." autofocus>
+    <input type="text" id="typingInput" placeholder="Type here..." autofocus>
 
-  <div class="display">
-    <div class="box">
-      <div class="label">Last Key</div>
-      <div class="value" id="keyVal">—</div>
+    <div class="display">
+      <div class="box">
+        <div class="label">Last Key</div>
+        <div class="value" id="keyVal">—</div>
+      </div>
+      <div class="box">
+        <div class="label">KeyCode</div>
+        <div class="value" id="codeVal">—</div>
+      </div>
+      <div class="box">
+        <div class="label">Code</div>
+        <div class="value" id="physVal">—</div>
+      </div>
     </div>
-    <div class="box">
-      <div class="label">KeyCode</div>
-      <div class="value" id="codeVal">—</div>
+
+    <div class="history" id="history"></div>
+
+    <!-- ✅ PropellerAds Ad Zone (replace with your script after approval) -->
+    <div id="propeller-ad-slot">
+      <!-- Example: <script async src="https://profitableadsnetwork.com/zone123.js"></script> -->
     </div>
-    <div class="box">
-      <div class="label">Code</div>
-      <div class="value" id="physVal">—</div>
-    </div>
+
+    <button id="clearBtn">Clear</button>
+
+    <p style="font-size:12px; opacity:0.7;">
+      Soft keyboards display Unicode code instead of real keyCode/Code.
+    </p>
   </div>
 
-  <div class="history" id="history"></div>
-
-  <!-- AdSense Placeholder -->
-  <div class="ad-placeholder">Your Ad Here</div>
-
-  <button id="clearBtn">Clear</button>
-
-  <p style="font-size:12px; opacity:0.7;">Soft keyboards display Unicode code instead of real keyCode/Code.</p>
-</div>
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
