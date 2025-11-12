@@ -1,60 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <script src="https://3nbf4.com/act/files/tag.min.js?z=10179435" data-cfasync="false" async></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Key Inspector</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="card">
+            <h1>Key Inspector</h1>
+            <p>
+                Type in the box below. Works with soft keyboards and physical
+                keyboards.
+            </p>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Key Inspector</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+            <input
+                type="text"
+                id="typingInput"
+                placeholder="Type here..."
+                autofocus
+            />
 
-  <div class="card">
-    <h1>Key Inspector</h1>
-    <p>Type in the box below. Works with soft keyboards and physical keyboards.</p>
+            <div class="display">
+                <div class="box">
+                    <div class="label">Last Key</div>
+                    <div class="value" id="keyVal">—</div>
+                </div>
+                <div class="box">
+                    <div class="label">KeyCode</div>
+                    <div class="value" id="codeVal">—</div>
+                </div>
+                <div class="box">
+                    <div class="label">Code</div>
+                    <div class="value" id="physVal">—</div>
+                </div>
+            </div>
 
-    <input type="text" id="typingInput" placeholder="Type here..." autofocus>
+            <div class="history" id="history"></div>
 
-    <div class="display">
-      <div class="box">
-        <div class="label">Last Key</div>
-        <div class="value" id="keyVal">—</div>
-      </div>
-      <div class="box">
-        <div class="label">KeyCode</div>
-        <div class="value" id="codeVal">—</div>
-      </div>
-      <div class="box">
-        <div class="label">Code</div>
-        <div class="value" id="physVal">—</div>
-      </div>
-    </div>
+            <div id="propeller-ad-slot"></div>
 
-    <div class="history" id="history"></div>
+            <button id="clearBtn">Clear</button>
 
-    <div id="propeller-ad-slot"></div>
+            <p style="font-size: 12px; opacity: 0.7">
+                Soft keyboards display Unicode code instead of real
+                keyCode/Code.
+            </p>
+        </div>
 
-    <button id="clearBtn">Clear</button>
+        <script src="script.js"></script>
 
-    <p style="font-size:12px; opacity:0.7;">
-      Soft keyboards display Unicode code instead of real keyCode/Code.
-    </p>
-  </div>
+        <!-- Monetag Push Notifications -->
 
-  <script src="script.js"></script>
-
-  <!-- Monetag Push Notifications -->
-
-  <!-- Monetag OnClick (Popunder) Ad -->
-  <script>
-    (function (s) {
-      s.dataset.zone = '10178417';
-      s.src = 'https://al5sm.com/tag.min.js';
-    })([document.documentElement, document.body]
-      .filter(Boolean)
-      .pop()
-      .appendChild(document.createElement('script')));
-  </script>
-</body>
+        <!-- Monetag OnClick (Popunder) Ad -->
+        <script>
+            (function (s) {
+                s.dataset.zone = "10178417";
+                s.src = "https://al5sm.com/tag.min.js";
+            })(
+                [document.documentElement, document.body]
+                    .filter(Boolean)
+                    .pop()
+                    .appendChild(document.createElement("script"))
+            );
+        </script>
+    </body>
 </html>
